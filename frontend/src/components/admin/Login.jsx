@@ -1,11 +1,43 @@
 import React, { useState } from "react";
+import { useAppContext } from "../../context/AppContext";
+import toast from "react-hot-toast";
 
 const Login = () => {
+	const { axios, setToken, navigate } = useAppContext();
+
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
+	const [showPassword, setShowPassword] = useState(false); // 👈 state for toggle
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
+
+		if (!email || !password) {
+			toast.error("Please enter both email and password");
+			return;
+		}
+
+		try {
+			const { data } = await axios.post("/api/admin/login", {
+				email,
+				password,
+			});
+
+			if (data.success) {
+				setToken(data.token);
+				localStorage.setItem("token", data.token);
+				axios.defaults.headers.common["Authorization"] = `Bearer ${data.token}`;
+				navigate('/admin')
+			} else {
+				console.log(data.message);
+				toast.error(data.message);
+			}
+		} catch (error) {
+			console.error("Login error:", error);
+			const message =
+				error.response?.data?.message || error.message || "Login failed";
+			toast.error(message);
+		}
 	};
 
 	return (
@@ -25,7 +57,7 @@ const Login = () => {
 						className="mt-6 w-full sm:max-w-md text-gray-600"
 					>
 						<div className="flex flex-col">
-							<lable> Email </lable>
+							<label>Email</label>
 							<input
 								onChange={(e) => setEmail(e.target.value)}
 								value={email}
@@ -35,23 +67,29 @@ const Login = () => {
 								className="border-b-2 border-gray-300 p-2 outline-none mb-6"
 							/>
 						</div>
-						<div className="flex flex-col">
-							<lable> Password </lable>
+						<div className="flex flex-col relative">
+							<label>Password</label>
 							<input
 								onChange={(e) => setPassword(e.target.value)}
 								value={password}
-								type="password"
+								type={showPassword ? "text" : "password"} // 👈 Toggle
 								required
 								placeholder="your password"
-								className="border-b-2 border-gray-300 p-2 outline-none mb-6"
+								className="border-b-2 border-gray-300 p-2 pr-10 outline-none mb-6"
 							/>
+							<button
+								type="button"
+								onClick={() => setShowPassword(!showPassword)}
+								className="absolute right-2 bottom-[2.3rem] text-sm text-primary"
+							>
+								{showPassword ? "Hide" : "Show"}
+							</button>
 						</div>
 						<button
 							type="submit"
 							className="w-full py-3 font-medium bg-primary text-white rounded cursor-pointer hover:bg-primary/90 transition-all"
 						>
-							{" "}
-							Login{" "}
+							Login
 						</button>
 					</form>
 				</div>

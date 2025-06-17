@@ -72,7 +72,7 @@ export const deleteCommentById = async (req, res) => {
 
 		await Comment.findByIdAndDelete(id);
 
-		res.json({ success: true, messsage: "Comment deleted Successfully" });
+		res.json({ success: true, message: "Comment deleted Successfully" });
 	} catch (error) {
 		res.json({ success: false, message: error.message });
 	}

@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 const BlogCard = ({ blog }) => {
 	const { title, description, category, image, _id } = blog;
     const navigate = useNavigate();
+
+    useEffect(() => {
+       // console.log(image);
+    }, [])
 	return (
         <div onClick={()=>navigate(`/blog/${_id}`)} className="w-full rounded-lg overflow-hidden shadow hover:scale-102 hover:shadow-primary/25 duration-300 cursor-pointer">
             <img src={image} alt="" className="aspect-video"/>
