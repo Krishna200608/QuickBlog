@@ -13,9 +13,11 @@ Check out the live app here:
 
 ## 🎨 Preview
 
-Upload or replace the image below with a screenshot of your running QuickBlog app:
+![QuickBlog Preview](./WebPics/preview1.png)
 
-![QuickBlog Preview](./preview.png)
+<video src="./WebPics/Preview_video.mp4" controls width="600">
+  Your browser does not support the video tag.
+</video>
 
 ---
 
@@ -43,7 +45,7 @@ quickblog/
 * **Backend**: Node.js + Express
 * **Database**: MongoDB
 * **Image Uploads**: ImageKit
-* **AI Integration**: (Your chosen AI service or library)
+* **AI Integration**: Gemini free model
 
 ---
 
@@ -53,7 +55,7 @@ quickblog/
 * npm or yarn
 * MongoDB (local or Atlas)
 * ImageKit account (for API keys)
-* (Optional) Gemini API key for additional AI features
+* Gemini API key for additional AI features
 
 ---
 
@@ -65,8 +67,7 @@ In `backend/.env`, create the file (or rename from `.env.example`) and fill in y
 
 ```dotenv
 PORT=4000
-MONGODB_URI=mongodb://localhost:27017/quickblog
-# MONGODB_URI="mongodb+srv://<username>:<password>@cluster0.ix5ng.mongodb.net/quickblog"
+MONGODB_URI="Your Mongodb_Url"
 
 # Admin Credentials
 ADMIN_EMAIL='your-admin@example.com'
@@ -78,7 +79,7 @@ JWT_SECRET='yourJwtSecret'
 # ImageKit
 IMAGEKIT_PUBLIC_KEY='yourImageKitPublicKey'
 IMAGEKIT_PRIVATE_KEY='yourImageKitPrivateKey'
-IMAGEKIT_URL_ENDPOINT='https://ik.imagekit.io/your_imagekit_id'
+IMAGEKIT_URL_ENDPOINT='yourImageKitUrlPoint'
 
 # Gemini (Optional)
 GEMINI_API_KEY='yourGeminiApiKey'
@@ -89,7 +90,7 @@ GEMINI_API_KEY='yourGeminiApiKey'
 In `frontend/.env`, create the file (or rename from `.env.example`) and fill in:
 
 ```dotenv
-VITE_BACKEND_URL=http://localhost:4000
+VITE_BACKEND_URL="YourBackendUrl" (e.g. http://localhost:4000)
 ```
 
 ---
@@ -137,7 +138,7 @@ The frontend will start at `http://localhost:5173` (or another port Vite chooses
 * Register or log in with the admin credentials you set in your backend `.env`.
 * Create, edit, and delete blog posts.
 * Upload images directly via ImageKit integration.
-* (Optional) Explore AI-powered features for generating post ideas, titles, or content.
+* Explore AI-powered features for generating post ideas, titles, or content.
 
 ---
 
@@ -151,8 +152,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 Questions, feedback, or contributions? Reach out to:
 
-* **Krishna Sikheriya** – [krishna@example.com](mailto:krishna@example.com)
-* GitHub: [github.com/yourusername](https://github.com/yourusername)
+* **Krishna Sikheriya** – [krishnasikheriya001@gmail.com](mailto:krishnasikheriya001@gmail.com)
+* GitHub: [github.com/Krishna200608](https://github.com/Krishna200608)
 
 ---
 
