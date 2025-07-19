@@ -1,17 +1,17 @@
-# ![QuickBlog Logo](./WebPics/favicon.svg) QuickBlog  
+# <img src="./WebPics/favicon.svg" alt="QuickBlog Logo" width="50" height="29"> QuickBlog
 
-**QuickBlog** is an AI-powered blogging application that makes it easy to create, manage, and publish blog posts. 🌟🧠📚 With an intuitive React frontend, a Node/Express backend, and MongoDB for storage, QuickBlog also integrates ImageKit for seamless image uploads. 🖼️⚡🔗
+**QuickBlog** is an AI-powered blogging application that makes it easy to create, manage, and publish blog posts. 🌟 With an intuitive React frontend, a Node/Express backend, and MongoDB for storage, QuickBlog also integrates ImageKit for seamless image uploads. 🖼️
 
 ---
 
-## 🚀 Live Demo 🎯🖥️🌐
+## 🚀 Live Demo
 
-Check out the live app here: 🌍💻👇
+Check out the live app here:
 🔗 [https://quick-blog-frontend-nu.vercel.app/](https://quick-blog-frontend-nu.vercel.app/)
 
 ---
 
-## 🎨 Preview 🖌️📸✨
+## 🎨 Preview
 
 ![QuickBlog Preview](./WebPics/preview1.png)
 
@@ -21,7 +21,7 @@ Check out the live app here: 🌍💻👇
 
 ---
 
-## 📂 Project Structure 🗃️📁📊
+## 📂 Project Structure
 
 ```
 quickblog/
@@ -39,7 +39,7 @@ quickblog/
 
 ---
 
-## 🔧 Tech Stack 🛠️💻📦
+## 🔧 Tech Stack
 
 * **Frontend**: Vite + React 19
 * **Backend**: Node.js + Express
@@ -49,7 +49,7 @@ quickblog/
 
 ---
 
-## 📝 Prerequisites 📋📌🧰
+## 📝 Prerequisites
 
 * Node.js v14+
 * npm or yarn
@@ -59,11 +59,11 @@ quickblog/
 
 ---
 
-## ⚙️ Configuration 🧩🔐🛠️
+## ⚙️ Configuration
 
-### Backend 🖥️🔧📄
+### Backend
 
-In `backend/.env`, create the file (or rename from `.env.example`) and fill in your values: ✍️📂🔍
+In `backend/.env`, create the file (or rename from `.env.example`) and fill in your values:
 
 ```dotenv
 PORT=4000
@@ -85,9 +85,9 @@ IMAGEKIT_URL_ENDPOINT='yourImageKitUrlPoint'
 GEMINI_API_KEY='yourGeminiApiKey'
 ```
 
-### Frontend 🌐🔧🗃️
+### Frontend
 
-In `frontend/.env`, create the file (or rename from `.env.example`) and fill in: 📝📍🔍
+In `frontend/.env`, create the file (or rename from `.env.example`) and fill in:
 
 ```dotenv
 VITE_BACKEND_URL="YourBackendUrl" (e.g. http://localhost:4000)
@@ -95,16 +95,16 @@ VITE_BACKEND_URL="YourBackendUrl" (e.g. http://localhost:4000)
 
 ---
 
-## 📦 Installation & Running ⚙️🚀📁
+## 📦 Installation & Running
 
-### 1. Clone the repo 📥📂🔃
+### 1. Clone the repo
 
 ```bash
 git clone https://github.com/yourusername/quickblog.git
 cd quickblog
 ```
 
-### 2. Backend Setup 🔧📡💾
+### 2. Backend Setup
 
 ```bash
 cd backend
@@ -115,11 +115,11 @@ npm install
 npm run server
 ```
 
-By default, the backend will run at `http://localhost:4000`. 🌐⚙️🔁
+By default, the backend will run at `http://localhost:4000`.
 
-### 3. Frontend Setup 💻🛠️🌟
+### 3. Frontend Setup
 
-Open a new terminal: 🖥️🔄📂
+Open a new terminal:
 
 ```bash
 cd frontend
@@ -129,11 +129,11 @@ npm install
 npm start
 ```
 
-The frontend will start at `http://localhost:5173` (or another port Vite chooses). 🚀🌐🟢
+The frontend will start at `http://localhost:5173` (or another port Vite chooses).
 
 ---
 
-## 🎉 Usage 📝🧑‍💻🧠
+## 🎉 Usage
 
 * Register or log in with the admin credentials you set in your backend `.env`.
 * Create, edit, and delete blog posts.
@@ -142,19 +142,19 @@ The frontend will start at `http://localhost:5173` (or another port Vite chooses
 
 ---
 
-## 📝 License ⚖️📃🗂️
+## 📝 License
 
-This project is licensed under the IIITA License.🧾✅🔍
+This project is licensed under the IIITA License.
 
 ---
 
-## 💬 Contact ✉️📧🤝
+## 💬 Contact
 
-Questions, feedback, or contributions? Reach out to: 🗣️📨🧑‍💻
+Questions, feedback, or contributions? Reach out to:
 
 * **Krishna Sikheriya** – [krishnasikheriya001@gmail.com](mailto:krishnasikheriya001@gmail.com)
 * GitHub: [github.com/Krishna200608](https://github.com/Krishna200608)
 
 ---
 
-*Happy blogging with QuickBlog!* ✍️🎉🧡
+*Happy blogging with QuickBlog!*
