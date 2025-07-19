@@ -15,9 +15,7 @@ Check out the live app here:
 
 ![QuickBlog Preview](./WebPics/preview1.png)
 
-<video src="./WebPics/Preview_video.mp4" controls width="600">
-  Your browser does not support the video tag.
-</video>
+![QuickBlog Preview](./WebPics/preview2.png)
 
 ---
 
