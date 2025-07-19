@@ -98,8 +98,8 @@ VITE_BACKEND_URL="YourBackendUrl" (e.g. http://localhost:4000)
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/yourusername/quickblog.git
-cd quickblog
+git clone https://github.com/Krishna200608/QuickBlog.git
+cd QuickBlog
 ```
 
 ### 2. Backend Setup
